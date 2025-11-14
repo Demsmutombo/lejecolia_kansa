@@ -1,0 +1,38 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/lejcolia/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/lejcolia/favicon.svg",
+      "destination": "/favicon.svg"
+    },
+    {
+      "source": "/lejcolia/favicon.png",
+      "destination": "/favicon.png"
+    },
+    {
+      "source": "/lejcolia/(.*)",
+      "destination": "/$1"
+    },
+    {
+      "source": "/lejcolia",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/lejcolia/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
+
