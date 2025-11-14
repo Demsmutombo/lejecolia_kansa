@@ -1,26 +1,23 @@
 {
+  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/lejcolia/assets/:path*",
-      "destination": "/assets/:path*"
+      "src": "/lejcolia/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
-      "source": "/lejcolia/favicon.svg",
-      "destination": "/favicon.svg"
+      "src": "/lejcolia/favicon.(svg|png|ico)",
+      "dest": "/favicon.$1"
     },
     {
-      "source": "/lejcolia/favicon.png",
-      "destination": "/favicon.png"
+      "src": "/lejcolia/(.*)",
+      "dest": "/$1"
     },
     {
-      "source": "/lejcolia/:path*",
-      "destination": "/:path*"
-    },
-    {
-      "source": "/lejcolia",
-      "destination": "/index.html"
+      "src": "/lejcolia",
+      "dest": "/index.html"
     }
   ]
 }
