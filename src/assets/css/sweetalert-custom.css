@@ -1,0 +1,73 @@
+/**
+ * Styles personnalisés pour SweetAlert2 - Version compacte
+ */
+
+/* Popup compact */
+.swal2-compact {
+  font-size: 0.9rem !important;
+}
+
+/* Titre compact */
+.swal2-title-compact {
+  font-size: 1.3rem !important;
+  padding: 0.5rem 0 !important;
+}
+
+/* Icône plus petite */
+.swal2-compact .swal2-icon {
+  width: 60px !important;
+  height: 60px !important;
+  margin: 0.5rem auto !important;
+}
+
+/* Texte plus compact */
+.swal2-compact .swal2-html-container {
+  font-size: 0.85rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+/* Boutons plus petits */
+.swal2-compact .swal2-confirm,
+.swal2-compact .swal2-cancel {
+  font-size: 0.85rem !important;
+  padding: 0.5rem 1.5rem !important;
+}
+
+/* Timer progress bar */
+.swal2-timer-progress-bar {
+  background: rgba(76, 175, 80, 0.6) !important;
+}
+
+/* Toast compact */
+.swal2-toast {
+  font-size: 0.85rem !important;
+  padding: 0.75rem !important;
+}
+
+/* Animation rapide */
+.swal2-show {
+  animation: swal2-show 0.2s !important;
+}
+
+.swal2-hide {
+  animation: swal2-hide 0.2s !important;
+}
+
+/* Responsive - encore plus petit sur mobile */
+@media (max-width: 576px) {
+  .swal2-popup {
+    width: 90% !important;
+    max-width: 350px !important;
+    padding: 1rem !important;
+  }
+  
+  .swal2-title {
+    font-size: 1.1rem !important;
+  }
+  
+  .swal2-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
