@@ -3,8 +3,8 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/lejcolia/assets/(.*)",
-      "destination": "/assets/$1"
+      "source": "/lejcolia/assets/:path*",
+      "destination": "/assets/:path*"
     },
     {
       "source": "/lejcolia/favicon.svg",
@@ -15,8 +15,8 @@
       "destination": "/favicon.png"
     },
     {
-      "source": "/lejcolia/(.*)",
-      "destination": "/$1"
+      "source": "/lejcolia/:path*",
+      "destination": "/:path*"
     },
     {
       "source": "/lejcolia",
@@ -25,7 +25,7 @@
   ],
   "headers": [
     {
-      "source": "/lejcolia/assets/(.*)",
+      "source": "/lejcolia/assets/:path*",
       "headers": [
         {
           "key": "Cache-Control",
