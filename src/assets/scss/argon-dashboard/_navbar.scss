@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .navbar {
   box-shadow: $navbar-box-shadow;
 
@@ -147,8 +149,8 @@
   .navbar {
     &.navbar-transparent {
       .navbar-collapse {
-        padding-top: $spacer / 2;
-        padding-bottom: $spacer / 2;
+        padding-top: math.div($spacer, 2);
+        padding-bottom: math.div($spacer, 2);
       }
 
       .navbar-collapse.collapsing {

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 //
 // Vertical navbar + Sidenav
 //
@@ -27,7 +29,7 @@
         border: none;
 
         .dropdown-menu {
-          margin-left: $dropdown-item-padding-x / 2;
+          margin-left: math.div($dropdown-item-padding-x, 2);
         }
       }
       .icon {
@@ -151,8 +153,8 @@
           }
           // Second level
           .navbar-nav .nav .nav-link {
-            padding-top: $navbar-vertical-nav-link-padding-y / 1.5;
-            padding-bottom: $navbar-vertical-nav-link-padding-y / 1.5;
+            padding-top: math.div($navbar-vertical-nav-link-padding-y, 1.5);
+            padding-bottom: math.div($navbar-vertical-nav-link-padding-y, 1.5);
             padding-left: 15px;
 
             > span.sidenav-normal {
